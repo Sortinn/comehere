@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.qunar.flight.pangolin:transaction-common-api:5.5.105">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/qunar/flight/pangolin/transaction-common-api/5.5.105/transaction-common-api-5.5.105.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/qunar/flight/pangolin/transaction-common-api/5.5.105/transaction-common-api-5.5.105-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/qunar/flight/pangolin/transaction-common-api/5.5.105/transaction-common-api-5.5.105-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

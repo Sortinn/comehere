@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.qunar.qm.fuwu:lock-cluster-api:1.0.07">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/qunar/qm/fuwu/lock-cluster-api/1.0.07/lock-cluster-api-1.0.07.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/qunar/qm/fuwu/lock-cluster-api/1.0.07/lock-cluster-api-1.0.07-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/qunar/qm/fuwu/lock-cluster-api/1.0.07/lock-cluster-api-1.0.07-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

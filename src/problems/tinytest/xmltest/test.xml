@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<core:AadlSpec xmi:version="2.0"
+               xmlns:xmi="http://www.omg.org/XMI"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xmlns:core="http:///AADL/core"
+               xmlns:property="http:///AADL/property" name="TEST">
+    <aadlPackage name="TEST">
+        <aadlPublic>
+            <systemType name="Complete"/>
+            <systemImpl name="Complete.PBA_speed_control" compType="Complete">
+                <connections>
+                    <dataConnection name="DC1" srcContext="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/systemImpl[@name=Complete.PBA_speed_control]/subcomponents/deviceSubcomponent[@name=speed_sensor]"
+                                    dstContext="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/systemImpl[@name=Complete.PBA_speed_control]/subcomponents/processSubcomponent[@name=speed_control]"
+                                    src="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/deviceType[@name=sensor]/features/dataPort[@name=sensor_data]"
+                                    dst="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/processType[@name=control]/features/dataPort[@name=sensor_data]"/>
+                    <dataConnection name="DC2" srcContext="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/systemImpl[@name=Complete.PBA_speed_control]/subcomponents/processSubcomponent[@name=speed_control]"
+                                    dstContext="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/systemImpl[@name=Complete.PBA_speed_control]/subcomponents/deviceSubcomponent[@name=throttle]"
+                                    src="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/processType[@name=control]/features/dataPort[@name=command_data]"
+                                    dst="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/deviceType[@name=actuator]/features/dataPort[@name=cmd]"/>
+                    <dataConnection name="DC3" srcContext="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/systemImpl[@name=Complete.PBA_speed_control]/subcomponents/deviceSubcomponent[@name=interface_unit]"
+                                    dstContext="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/systemImpl[@name=Complete.PBA_speed_control]/subcomponents/processSubcomponent[@name=speed_control]"
+                                    src="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/deviceType[@name=interface]/features/dataPort[@name=set_speed]"
+                                    dst="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/processType[@name=control]/features/dataPort[@name=set_speed]"/>
+                    <eventConnection name="EC4" srcContext="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/systemImpl[@name=Complete.PBA_speed_control]/subcomponents/deviceSubcomponent[@name=interface_unit]"
+                                     dstContext="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/systemImpl[@name=Complete.PBA_speed_control]/subcomponents/processSubcomponent[@name=speed_control]"
+                                     dst="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/processType[@name=control]/features/eventPort[@name=disengage]"
+                                     src="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/deviceType[@name=interface]/features/eventPort[@name=disengage]"/>
+                    <busAccessConnection name="BAC1" dstContext="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/systemImpl[@name=Complete.PBA_speed_control]/subcomponents/deviceSubcomponent[@name=speed_sensor]"
+                                         src="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/systemImpl[@name=Complete.PBA_speed_control]/subcomponents/busSubcomponent[@name=Standard_Marine_Bus]"
+                                         dst="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/deviceType[@name=sensor]/features/busAccess[@name=BA1]"/>
+                    <busAccessConnection name="BAC2" dstContext="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/systemImpl[@name=Complete.PBA_speed_control]/subcomponents/processorSubcomponent[@name=RT_1GHz]"
+                                         src="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/systemImpl[@name=Complete.PBA_speed_control]/subcomponents/busSubcomponent[@name=Standard_Marine_Bus]"
+                                         dst="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/processorType[@name=Real_Time]/features/busAccess[@name=BA1]"/>
+                    <busAccessConnection name="BAC3" dstContext="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/systemImpl[@name=Complete.PBA_speed_control]/subcomponents/deviceSubcomponent[@name=throttle]"
+                                         src="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/systemImpl[@name=Complete.PBA_speed_control]/subcomponents/busSubcomponent[@name=Standard_Marine_Bus]"
+                                         dst="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/deviceType[@name=actuator]/features/busAccess[@name=BA1]"/>
+                    <busAccessConnection name="BAC4" dstContext="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/systemImpl[@name=Complete.PBA_speed_control]/subcomponents/deviceSubcomponent[@name=interface_unit]"
+                                         src="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/systemImpl[@name=Complete.PBA_speed_control]/subcomponents/busSubcomponent[@name=Standard_Marine_Bus]"
+                                         dst="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/deviceType[@name=interface]/features/busAccess[@name=BA1]"/>
+                    <busAccessConnection name="BAC5" dstContext="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/systemImpl[@name=Complete.PBA_speed_control]/subcomponents/memorySubcomponent[@name=Stand_Memory]"
+                                         src="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/systemImpl[@name=Complete.PBA_speed_control]/subcomponents/busSubcomponent[@name=Standard_Marine_Bus]"
+                                         dst="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/memoryType[@name=RAM]/features/busAccess[@name=BA1]"/>
+                </connections>
+                <subcomponents>
+                    <deviceSubcomponent name="speed_sensor" classifier="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/deviceImpl[@name=sensor.speed]"/>
+                    <deviceSubcomponent name="throttle" classifier="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/deviceImpl[@name=actuator.speed]"/>
+                    <processSubcomponent name="speed_control" classifier="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/processImpl[@name=control.speed]"/>
+                    <deviceSubcomponent name="interface_unit" classifier="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/deviceImpl[@name=interface.pilot]"/>
+                    <processorSubcomponent name="RT_1GHz" classifier="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/processorImpl[@name=Real_Time.one_GHz]"/>
+                    <busSubcomponent name="Standard_Marine_Bus" classifier="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/busImpl[@name=Marine.Standard]"/>
+                    <memorySubcomponent name="Stand_Memory" classifier="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/memoryImpl[@name=RAM.Standard]"/>
+                </subcomponents>
+            </systemImpl>
+            <threadType name="read_data">
+                <properties>
+                    <propertyAssociation propertyDefinition="/aadlSpec[@name=AADL_Properties]/propertySet[@name=AADL_Properties]/propertyDefinition[@name=Dispatch_Protocol]">
+                        <propertyValue xsi:type="property:EnumValue" enumLiteral="/aadlSpec[@name=AADL_Project]/propertySet[@name=AADL_Project]/propertyType[@name=Supported_Dispatch_Protocols]/enumLiteral[@name=Periodic]"/>
+                    </propertyAssociation>
+                    <propertyAssociation propertyDefinition="/aadlSpec[@name=AADL_Properties]/propertySet[@name=AADL_Properties]/propertyDefinition[@name=Period]">
+                        <propertyValue xsi:type="property:IntegerValue" unitLiteral="/aadlSpec[@name=AADL_Project]/propertySet[@name=AADL_Project]/propertyType[@name=Time_Units]/unitLiteral[@name=Ms]"
+                                       valueString="50" value="50" base="10"/>
+                    </propertyAssociation>
+                </properties>
+                <features>
+                    <dataPort name="sensor_data"/>
+                    <dataPort name="proc_data" direction="out"/>
+                </features>
+            </threadType>
+            <threadImpl name="read_data.speed" compType="read_data"/>
+            <threadType name="control_laws">
+                <properties>
+                    <propertyAssociation propertyDefinition="/aadlSpec[@name=AADL_Properties]/propertySet[@name=AADL_Properties]/propertyDefinition[@name=Dispatch_Protocol]">
+                        <propertyValue xsi:type="property:EnumValue" enumLiteral="/aadlSpec[@name=AADL_Project]/propertySet[@name=AADL_Project]/propertyType[@name=Supported_Dispatch_Protocols]/enumLiteral[@name=Periodic]"/>
+                    </propertyAssociation>
+                    <propertyAssociation propertyDefinition="/aadlSpec[@name=AADL_Properties]/propertySet[@name=AADL_Properties]/propertyDefinition[@name=Period]">
+                        <propertyValue xsi:type="property:IntegerValue" unitLiteral="/aadlSpec[@name=AADL_Project]/propertySet[@name=AADL_Project]/propertyType[@name=Time_Units]/unitLiteral[@name=Ms]"
+                                       valueString="50" value="50" base="10"/>
+                    </propertyAssociation>
+                </properties>
+                <features>
+                    <dataPort name="proc_data"/>
+                    <dataPort name="cmd" direction="out"/>
+                    <dataPort name="set_speed"/>
+                    <eventPort name="disengage"/>
+                </features>
+            </threadType>
+            <threadImpl name="control_laws.speed" compType="control_laws"/>
+            <processType name="control">
+                <features>
+                    <dataPort name="sensor_data"/>
+                    <dataPort name="command_data" direction="out"/>
+                    <dataPort name="set_speed"/>
+                    <eventPort name="disengage"/>
+                </features>
+            </processType>
+            <processImpl name="control.speed" compType="control">
+                <connections>
+                    <dataConnection name="DC1" srcContext="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/processImpl[@name=control.speed]"
+                                    dstContext="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/processImpl[@name=control.speed]/subcomponents/threadSubcomponent[@name=scale_speed_data]"
+                                    src="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/processType[@name=control]/features/dataPort[@name=sensor_data]"
+                                    dst="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/threadType[@name=read_data]/features/dataPort[@name=sensor_data]"/>
+                    <dataConnection name="DC2" srcContext="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/processImpl[@name=control.speed]/subcomponents/threadSubcomponent[@name=scale_speed_data]"
+                                    dstContext="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/processImpl[@name=control.speed]/subcomponents/threadSubcomponent[@name=speed_control_laws]"
+                                    src="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/threadType[@name=read_data]/features/dataPort[@name=proc_data]"
+                                    dst="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/threadType[@name=control_laws]/features/dataPort[@name=proc_data]"/>
+                    <dataConnection name="DC3" srcContext="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/processImpl[@name=control.speed]/subcomponents/threadSubcomponent[@name=speed_control_laws]"
+                                    dstContext="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/processImpl[@name=control.speed]"
+                                    src="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/threadType[@name=control_laws]/features/dataPort[@name=cmd]"
+                                    dst="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/processType[@name=control]/features/dataPort[@name=command_data]"/>
+                    <eventConnection name="EC1" srcContext="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/processImpl[@name=control.speed]"
+                                     dstContext="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/processImpl[@name=control.speed]/subcomponents/threadSubcomponent[@name=speed_control_laws]"
+                                     dst="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/threadType[@name=control_laws]/features/eventPort[@name=disengage]"
+                                     src="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/processType[@name=control]/features/eventPort[@name=disengage]"/>
+                    <dataConnection name="DC4" srcContext="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/processImpl[@name=control.speed]"
+                                    dstContext="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/processImpl[@name=control.speed]/subcomponents/threadSubcomponent[@name=speed_control_laws]"
+                                    src="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/processType[@name=control]/features/dataPort[@name=set_speed]"
+                                    dst="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/threadType[@name=control_laws]/features/dataPort[@name=set_speed]"/>
+                </connections>
+                <subcomponents>
+                    <threadSubcomponent name="scale_speed_data" classifier="read_data.speed"/>
+                    <threadSubcomponent name="speed_control_laws" classifier="control_laws.speed"/>
+                </subcomponents>
+            </processImpl>
+            <processorType name="Real_Time">
+                <features>
+                    <busAccess name="BA1" direction="required" busClassifier="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/busImpl[@name=Marine.Standard]"/>
+                </features>
+            </processorType>
+            <processorImpl name="Real_Time.one_GHz" compType="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/processorType[@name=Real_Time]"/>
+            <memoryType name="RAM">
+                <features>
+                    <busAccess name="BA1" direction="required" busClassifier="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/busImpl[@name=Marine.Standard]"/>
+                </features>
+            </memoryType>
+            <memoryImpl name="RAM.Standard" compType="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/memoryType[@name=RAM]"/>
+            <busType name="Marine"/>
+            <busImpl name="Marine.Standard" compType="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/busType[@name=Marine]"/>
+            <deviceType name="interface">
+                <features>
+                    <dataPort name="set_speed" direction="out"/>
+                    <eventPort name="disengage" direction="out"/>
+                    <busAccess name="BA1" direction="required" busClassifier="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/busImpl[@name=Marine.Standard]"/>
+                </features>
+            </deviceType>
+            <deviceImpl name="interface.pilot" compType="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/deviceType[@name=interface]"/>
+            <deviceType name="sensor">
+                <features>
+                    <dataPort name="sensor_data" direction="out"/>
+                    <busAccess name="BA1" direction="required" busClassifier="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/busImpl[@name=Marine.Standard]"/>
+                </features>
+            </deviceType>
+            <deviceImpl name="sensor.speed" compType="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/deviceType[@name=sensor]"/>
+            <deviceType name="actuator">
+                <features>
+                    <dataPort name="cmd"/>
+                    <busAccess name="BA1" direction="required" busClassifier="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/busImpl[@name=Marine.Standard]"/>
+                </features>
+            </deviceType>
+            <deviceImpl name="actuator.speed" compType="/aadlSpec[@name=TEST]/aadlPackage[@name=TEST]/aadlPublic/deviceType[@name=actuator]"/>
+        </aadlPublic>
+    </aadlPackage>
+</core:AadlSpec>
