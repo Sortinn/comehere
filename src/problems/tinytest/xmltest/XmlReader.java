@@ -17,7 +17,6 @@ import java.util.Iterator;
 public class XmlReader {
 
     public static JSONObject parseXml(String filename) {
-        new XMLSerializer().readFromFile()
     }
 
     public static void main(String[] args) {
