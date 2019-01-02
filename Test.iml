@@ -137,7 +137,6 @@
     <orderEntry type="library" name="Maven: net.sf.opencsv:opencsv:1.8" level="project" />
     <orderEntry type="library" name="Maven: com.hp.hpl:jena:1.6.1" level="project" />
     <orderEntry type="library" name="Maven: com.esotericsoftware.kryo:kryo:2.22" level="project" />
-    <orderEntry type="library" name="Maven: org.json:json:20151123" level="project" />
     <orderEntry type="library" name="Maven: com.qunar.flight.fuwu:fuwu-api:2.0.20" level="project" />
     <orderEntry type="library" name="Maven: com.qunar.flight.fuwu:fuwu_order_dispatch.api:1.1.9" level="project" />
     <orderEntry type="library" name="Maven: qunar.common:common-http:9.2.17" level="project" />
@@ -331,5 +330,6 @@
     <orderEntry type="library" name="Maven: net.minidev:accessors-smart:1.1" level="project" />
     <orderEntry type="library" name="Maven: com.qunar.flight.fuwu:fuwu_kie_api:0.0.1" level="project" />
     <orderEntry type="library" name="Maven: com.qunar.fuwu:fuwu_invoicei_api:1.0.12" level="project" />
+    <orderEntry type="library" name="Maven: org.json:json:20180813" level="project" />
   </component>
 </module>
