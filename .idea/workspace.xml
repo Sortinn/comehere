@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9606690-953f-4277-b674-0cd140ccde91" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/problems/tinytest/xmltest/XmlReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/problems/tinytest/xmltest/XmlReader.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -89,8 +87,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/problems/tinytest/xmltest/XmlReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+            <state relative-caret-position="21">
+              <caret line="3" column="36" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -98,17 +96,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/problems/solutions/array/MinSubArrayLenTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1130">
+            <state relative-caret-position="-700">
               <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/problems/solutions/linkedlist/AddTwoNumbersTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-342">
-              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            <state relative-caret-position="452">
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
             </state>
           </provider>
         </entry>
@@ -174,11 +172,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="1210" column="21" selection-start-line="1210" selection-start-column="21" selection-end-line="1210" selection-end-column="21" />
+            <state relative-caret-position="52">
+              <caret line="1205" selection-start-line="1205" selection-end-line="1205" />
             </state>
           </provider>
           <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
@@ -299,11 +297,6 @@
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="common-test" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="common-test" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
         </path>
       </expand>
@@ -363,7 +356,7 @@
     <property name="SearchEverywhereHistoryKey" value="substring()&#9;PSI&#9;JAVA://com.sun.org.apache.xml.internal.utils.XMLString#substring&#10;asList&#9;PSI&#9;JAVA://com.google.common.collect.ImmutableCollection#asList&#10;HashMa&#9;PSI&#9;JAVA://java.util.HashMap&#10;Array&#9;FILE&#9;jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/ArrayList.java&#10;ArrayLi&#9;PSI&#9;JAVA://java.util.ArrayList&#10;Comparator&#9;PSI&#9;JAVA://java.util.Comparator&#10;Comparat&#9;PSI&#9;JAVA://com.sun.org.apache.xpath.internal.objects.Comparator" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546443825529" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546444377907" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -520,12 +513,12 @@
       <workItem from="1546418064382" duration="1809000" />
       <workItem from="1546439523701" duration="1694000" />
       <workItem from="1546441268459" duration="455000" />
-      <workItem from="1546442789828" duration="869000" />
+      <workItem from="1546442789828" duration="1523000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136577000" />
+    <option name="totallyTimeSpent" value="137231000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="820" extended-state="0" />
@@ -545,7 +538,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.6099291" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3280255" />
@@ -558,7 +551,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Database" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" visible="true" weight="0.3297568" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.3297568" />
       <window_info anchor="right" id="Bean Validation" order="9" />
     </layout>
   </component>
@@ -934,34 +927,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/problems/solutions/linkedlist/AddTwoNumbersTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="1210" column="21" selection-start-line="1210" selection-start-column="21" selection-end-line="1210" selection-end-column="21" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/problems/tinytest/xmltest/XmlReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        <state relative-caret-position="452">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/problems/solutions/array/MinSubArrayLenTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1130">
+        <state relative-caret-position="-700">
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/problems/solutions/linkedlist/AddTwoNumbersTest.java">
+    <entry file="file://$PROJECT_DIR$/src/problems/tinytest/xmltest/XmlReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-342">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        <state relative-caret-position="21">
+          <caret line="3" column="36" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="36" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="1205" selection-start-line="1205" selection-end-line="1205" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
   </component>
   <component name="masterDetails">

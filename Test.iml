@@ -331,8 +331,5 @@
     <orderEntry type="library" name="Maven: net.minidev:accessors-smart:1.1" level="project" />
     <orderEntry type="library" name="Maven: com.qunar.flight.fuwu:fuwu_kie_api:0.0.1" level="project" />
     <orderEntry type="library" name="Maven: com.qunar.fuwu:fuwu_invoicei_api:1.0.12" level="project" />
-    <orderEntry type="library" name="Maven: net.sf.json-lib:json-lib:2.4" level="project" />
-    <orderEntry type="library" name="Maven: commons-logging:commons-logging:1.1.1" level="project" />
-    <orderEntry type="library" name="Maven: net.sf.ezmorph:ezmorph:1.0.6" level="project" />
   </component>
 </module>
