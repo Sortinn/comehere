@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9606690-953f-4277-b674-0cd140ccde91" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20151123.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/problems/tinytest/xmltest/XmlReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/problems/tinytest/xmltest/XmlReader.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,7 +17,7 @@
     <session id="-2138900555">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="39" />
+          <entry key="project.closed" value="40" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.11" value="4" />
@@ -28,7 +25,7 @@
           <entry key="project.open.time.13" value="2" />
           <entry key="project.open.time.14" value="5" />
           <entry key="project.open.time.15" value="1" />
-          <entry key="project.open.time.16" value="2" />
+          <entry key="project.open.time.16" value="3" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.2" value="3" />
           <entry key="project.open.time.20" value="1" />
@@ -40,7 +37,7 @@
           <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.57" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="40" />
+          <entry key="project.opened" value="41" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -57,9 +54,9 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="2" />
+          <entry key="CLASS" value="3" />
           <entry key="HTML" value="1" />
-          <entry key="JAVA" value="230" />
+          <entry key="JAVA" value="235" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="UML" value="5" />
           <entry key="XML" value="4" />
@@ -76,8 +73,8 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="11" />
-          <entry key="JAVA" value="22156" />
-          <entry key="PLAIN_TEXT" value="23" />
+          <entry key="JAVA" value="24650" />
+          <entry key="PLAIN_TEXT" value="112" />
           <entry key="RegExp" value="8" />
           <entry key="VTL" value="114" />
           <entry key="XML" value="112" />
@@ -90,20 +87,57 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/problems/tinytest/xmltest/XmlReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="71">
-              <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
+            <state relative-caret-position="-1211">
+              <caret line="35" column="36" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#530#531#0" expanded="true" />
+                <element signature="e#549#550#0" expanded="true" />
+                <element signature="e#537#538#0" expanded="true" />
+                <element signature="e#590#591#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/problems/tinytest/jsontest/JsonInfoFilter.java">
+        <entry file="file://$PROJECT_DIR$/src/problems/tinytest/xmltest/XmlBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="27" column="9" selection-start-line="17" selection-start-column="8" selection-end-line="27" selection-end-column="9" />
+            <state relative-caret-position="336">
+              <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+              <folding>
+                <element signature="e#307#308#0" expanded="true" />
+                <element signature="e#367#368#0" expanded="true" />
+                <element signature="e#419#420#0" expanded="true" />
+                <element signature="e#461#462#0" expanded="true" />
+                <element signature="e#499#500#0" expanded="true" />
+                <element signature="e#561#562#0" expanded="true" />
+                <element signature="e#615#616#0" expanded="true" />
+                <element signature="e#660#661#0" expanded="true" />
+                <element signature="e#701#702#0" expanded="true" />
+                <element signature="e#769#770#0" expanded="true" />
+                <element signature="e#829#830#0" expanded="true" />
+                <element signature="e#877#878#0" expanded="true" />
+                <element signature="e#921#922#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/io/Writer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="531">
+              <caret line="222" column="18" selection-start-line="222" selection-start-column="18" selection-end-line="222" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/problems/tinytest/xmltest/XmlReaderTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="188">
+              <caret line="80" column="7" lean-forward="true" selection-start-line="80" selection-start-column="7" selection-end-line="80" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -111,34 +145,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/problems/solutions/linkedlist/AddTwoNumbersTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
+            <state relative-caret-position="960">
               <caret line="45" selection-start-line="45" selection-end-line="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/LinkedList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20016">
-              <caret line="887" selection-start-line="887" selection-end-line="887" />
-              <folding>
-                <element signature="e#20484#20485#0" expanded="true" />
-                <element signature="e#20520#20521#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/AbstractList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8064">
-              <caret line="373" selection-start-line="373" selection-end-line="373" />
-              <folding>
-                <element signature="e#5343#5344#0" expanded="true" />
-                <element signature="e#5400#5401#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -180,12 +188,12 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="455">
+            <state relative-caret-position="29016">
               <caret line="1209" column="21" selection-start-line="1209" selection-start-column="21" selection-end-line="1209" selection-end-column="21" />
             </state>
           </provider>
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -226,8 +234,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/problems/sort/SelectSort.java" />
-        <option value="$PROJECT_DIR$/src/problems/sort/MergeSort.java" />
         <option value="$PROJECT_DIR$/src/problems/search/TwoSumII.java" />
         <option value="$PROJECT_DIR$/src/problems/tree/TreePrinter.java" />
         <option value="$PROJECT_DIR$/src/datastructure/bst/Main.java" />
@@ -276,6 +282,8 @@
         <option value="$PROJECT_DIR$/src/problems/tinytest/jsontest/JsonInfoFilter.java" />
         <option value="$PROJECT_DIR$/src/problems/tinytest/xmltest/test.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/problems/tinytest/xmltest/XmlBean.java" />
+        <option value="$PROJECT_DIR$/src/test/problems/tinytest/xmltest/XmlReaderTest.java" />
         <option value="$PROJECT_DIR$/src/problems/tinytest/xmltest/XmlReader.java" />
       </list>
     </option>
@@ -324,7 +332,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -357,16 +364,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="problems" type="462c0819:PsiDirectoryNode" />
               <item name="tinytest" type="462c0819:PsiDirectoryNode" />
-              <item name="jsontest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="xmltest" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -377,14 +381,18 @@
     <property name="SearchEverywhereHistoryKey" value="substring()&#9;PSI&#9;JAVA://com.sun.org.apache.xml.internal.utils.XMLString#substring&#10;asList&#9;PSI&#9;JAVA://com.google.common.collect.ImmutableCollection#asList&#10;HashMa&#9;PSI&#9;JAVA://java.util.HashMap&#10;Array&#9;FILE&#9;jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/ArrayList.java&#10;ArrayLi&#9;PSI&#9;JAVA://java.util.ArrayList&#10;Comparator&#9;PSI&#9;JAVA://java.util.Comparator&#10;Comparat&#9;PSI&#9;JAVA://com.sun.org.apache.xpath.internal.objects.Comparator" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546445016352" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546524669432" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
+    <key name="IntroduceConstantDialog.RECENTS_KEY">
+      <recent name="problems.tinytest.xmltest.XmlReader" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src" />
@@ -402,86 +410,99 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.XmlReader">
-    <configuration name="JsonInfoFilter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="problems.tinytest.jsontest.JsonInfoFilter" />
+  <component name="RunManager" selected="JUnit.XmlReaderTest">
+    <configuration name="XmlReaderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="problems.tinytest.jsontest.*" />
+          <option name="PATTERN" value="test.problems.tinytest.xmltest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="test.problems.tinytest.xmltest" />
+      <option name="MAIN_CLASS_NAME" value="test.problems.tinytest.xmltest.XmlReaderTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StopThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="problems.thread.StopThread" />
+    <configuration name="XmlReaderTest.testCreateCompleteCFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="problems.thread.*" />
+          <option name="PATTERN" value="test.problems.tinytest.xmltest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="test.problems.tinytest.xmltest" />
+      <option name="MAIN_CLASS_NAME" value="test.problems.tinytest.xmltest.XmlReaderTest" />
+      <option name="METHOD_NAME" value="testCreateCompleteCFile" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="problems.sort.testsort.TestSort" />
+    <configuration name="XmlReaderTest.testCreateControlCFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="problems.sort.testsort.*" />
+          <option name="PATTERN" value="test.problems.tinytest.xmltest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="test.problems.tinytest.xmltest" />
+      <option name="MAIN_CLASS_NAME" value="test.problems.tinytest.xmltest.XmlReaderTest" />
+      <option name="METHOD_NAME" value="testCreateControlCFile" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TwoStringCompare" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="problems.tinytest.stringtest.TwoStringCompare" />
+    <configuration name="XmlReaderTest.testCreateThread1CFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="problems.tinytest.stringtest.*" />
+          <option name="PATTERN" value="test.problems.tinytest.xmltest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="test.problems.tinytest.xmltest" />
+      <option name="MAIN_CLASS_NAME" value="test.problems.tinytest.xmltest.XmlReaderTest" />
+      <option name="METHOD_NAME" value="testCreateThread1CFile" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="XmlReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="problems.tinytest.xmltest.XmlReader" />
+    <configuration name="XmlReaderTest.testCreateThreadHeaderFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="problems.tinytest.xmltest.*" />
+          <option name="PATTERN" value="test.problems.tinytest.xmltest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="test.problems.tinytest.xmltest" />
+      <option name="MAIN_CLASS_NAME" value="test.problems.tinytest.xmltest.XmlReaderTest" />
+      <option name="METHOD_NAME" value="testCreateThreadHeaderFile" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.StopThread" />
-      <item itemvalue="Application.TestSort" />
-      <item itemvalue="Application.TwoStringCompare" />
-      <item itemvalue="Application.JsonInfoFilter" />
-      <item itemvalue="Application.XmlReader" />
+      <item itemvalue="JUnit.XmlReaderTest" />
+      <item itemvalue="JUnit.XmlReaderTest.testCreateThreadHeaderFile" />
+      <item itemvalue="JUnit.XmlReaderTest.testCreateCompleteCFile" />
+      <item itemvalue="JUnit.XmlReaderTest.testCreateControlCFile" />
+      <item itemvalue="JUnit.XmlReaderTest.testCreateThread1CFile" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.XmlReader" />
-        <item itemvalue="Application.JsonInfoFilter" />
-        <item itemvalue="Application.TwoStringCompare" />
-        <item itemvalue="Application.TestSort" />
-        <item itemvalue="Application.StopThread" />
+        <item itemvalue="JUnit.XmlReaderTest" />
+        <item itemvalue="JUnit.XmlReaderTest.testCreateThread1CFile" />
+        <item itemvalue="JUnit.XmlReaderTest.testCreateControlCFile" />
+        <item itemvalue="JUnit.XmlReaderTest.testCreateCompleteCFile" />
+        <item itemvalue="JUnit.XmlReaderTest.testCreateThreadHeaderFile" />
       </list>
     </recent_temporary>
   </component>
@@ -534,17 +555,60 @@
       <workItem from="1546418064382" duration="1809000" />
       <workItem from="1546439523701" duration="1694000" />
       <workItem from="1546441268459" duration="455000" />
-      <workItem from="1546442789828" duration="2356000" />
+      <workItem from="1546442789828" duration="7076000" />
+      <workItem from="1546515539598" duration="8823000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="XmlReaderTest_testCreateThreadHeaderFile - 2019.01.03 at 20h 55m 59s.xml">
+      <configuration name="XmlReaderTest.testCreateThreadHeaderFile" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="XmlReaderTest_testCreateThreadHeaderFile - 2019.01.03 at 20h 56m 18s.xml">
+      <configuration name="XmlReaderTest.testCreateThreadHeaderFile" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="XmlReaderTest_testCreateCompleteCFile - 2019.01.03 at 21h 10m 34s.xml">
+      <configuration name="XmlReaderTest.testCreateCompleteCFile" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="XmlReaderTest_testCreateCompleteCFile - 2019.01.03 at 21h 26m 08s.xml">
+      <configuration name="XmlReaderTest.testCreateCompleteCFile" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="XmlReaderTest_testCreateCompleteCFile - 2019.01.03 at 21h 30m 38s.xml">
+      <configuration name="XmlReaderTest.testCreateCompleteCFile" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="XmlReaderTest - 2019.01.03 at 21h 44m 48s.xml">
+      <configuration name="XmlReaderTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="XmlReaderTest_testCreateControlCFile - 2019.01.03 at 21h 49m 07s.xml">
+      <configuration name="XmlReaderTest.testCreateControlCFile" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="XmlReaderTest_testCreateControlCFile - 2019.01.03 at 21h 49m 54s.xml">
+      <configuration name="XmlReaderTest.testCreateControlCFile" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="XmlReaderTest_testCreateThread1CFile - 2019.01.03 at 22h 00m 17s.xml">
+      <configuration name="XmlReaderTest.testCreateThread1CFile" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="XmlReaderTest_testCreateThread1CFile - 2019.01.03 at 22h 00m 53s.xml">
+      <configuration name="XmlReaderTest.testCreateThread1CFile" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138064000" />
+    <option name="totallyTimeSpent" value="151607000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="820" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49879518" visible="true" weight="0.15808298" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49879518" visible="true" weight="0.2553648" />
       <window_info id="Structure" order="1" sideWeight="0.50120485" side_tool="true" weight="0.20958512" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -553,16 +617,16 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.65531915" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2638298" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.6099291" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3280255" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.6099291" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32765958" />
       <window_info anchor="bottom" id="Spring" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24964234" />
@@ -618,44 +682,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/datastructure/queue/Queue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/datastructure/queue/loopqueue/LoopQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/problems/solutions/thoughtworks/TextProcessorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/18.0/guava-18.0-sources.jar!/com/google/common/hash/BloomFilterStrategies.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-309">
-          <caret line="143" column="23" lean-forward="true" selection-start-line="143" selection-start-column="23" selection-end-line="143" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/18.0/guava-18.0.jar!/com/google/common/hash/BloomFilterStrategies.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/datastructure/queue/linkedlistqueue/LinkedListQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/com/sun/org/apache/xml/internal/utils/XMLString.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="237">
@@ -883,10 +909,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20016">
           <caret line="887" selection-start-line="887" selection-end-line="887" />
-          <folding>
-            <element signature="e#20484#20485#0" expanded="true" />
-            <element signature="e#20520#20521#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -894,10 +916,41 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8064">
           <caret line="373" selection-start-line="373" selection-end-line="373" />
-          <folding>
-            <element signature="e#5343#5344#0" expanded="true" />
-            <element signature="e#5400#5401#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/problems/solutions/array/MinSubArrayLenTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-686">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/json/json/20180813/json-20180813.jar!/org/json/JSONObject.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="1118" column="21" selection-start-line="1118" selection-start-column="21" selection-end-line="1118" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/json/json/20180813/json-20180813-sources.jar!/org/json/JSONObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="2231" column="54" selection-start-line="2230" selection-start-column="37" selection-end-line="2231" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/problems/tinytest/jsontest/JsonInfoFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/problems/solutions/linkedlist/AddTwoNumbersTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
         </state>
       </provider>
     </entry>
@@ -930,6 +983,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29016">
+          <caret line="1209" column="21" selection-start-line="1209" selection-start-column="21" selection-end-line="1209" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45264">
@@ -941,41 +1002,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/problems/solutions/linkedlist/AddTwoNumbersTest.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/lang/System.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        <state relative-caret-position="412">
+          <caret line="712" column="25" selection-start-line="712" selection-start-column="25" selection-end-line="712" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/problems/solutions/array/MinSubArrayLenTest.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/io/Writer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-686">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        <state relative-caret-position="531">
+          <caret line="222" column="18" selection-start-line="222" selection-start-column="18" selection-end-line="222" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/problems/tinytest/xmltest/XmlBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="1209" column="21" selection-start-line="1209" selection-start-column="21" selection-end-line="1209" selection-end-column="21" />
+        <state relative-caret-position="336">
+          <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+          <folding>
+            <element signature="e#307#308#0" expanded="true" />
+            <element signature="e#367#368#0" expanded="true" />
+            <element signature="e#419#420#0" expanded="true" />
+            <element signature="e#461#462#0" expanded="true" />
+            <element signature="e#499#500#0" expanded="true" />
+            <element signature="e#561#562#0" expanded="true" />
+            <element signature="e#615#616#0" expanded="true" />
+            <element signature="e#660#661#0" expanded="true" />
+            <element signature="e#701#702#0" expanded="true" />
+            <element signature="e#769#770#0" expanded="true" />
+            <element signature="e#829#830#0" expanded="true" />
+            <element signature="e#877#878#0" expanded="true" />
+            <element signature="e#921#922#0" expanded="true" />
+          </folding>
         </state>
       </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/problems/tinytest/jsontest/JsonInfoFilter.java">
+    <entry file="file://$PROJECT_DIR$/src/test/problems/tinytest/xmltest/XmlReaderTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="27" column="9" selection-start-line="17" selection-start-column="8" selection-end-line="27" selection-end-column="9" />
+        <state relative-caret-position="188">
+          <caret line="80" column="7" lean-forward="true" selection-start-line="80" selection-start-column="7" selection-end-line="80" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/problems/tinytest/xmltest/XmlReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
+        <state relative-caret-position="-1211">
+          <caret line="35" column="36" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#530#531#0" expanded="true" />
+            <element signature="e#549#550#0" expanded="true" />
+            <element signature="e#537#538#0" expanded="true" />
+            <element signature="e#590#591#0" expanded="true" />
           </folding>
         </state>
       </provider>
