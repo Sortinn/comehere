@@ -1,3 +1,3 @@
-[submodule "practice.datastructure"]
-	path = practice.datastructure
-	url = ./src/practice.datastructure
+[submodule "comehere.practice.datastructure"]
+	path = comehere.practice.datastructure
+	url = ./src/comehere.practice.datastructure

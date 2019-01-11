@@ -53,9 +53,9 @@ public class InterfaceNameAndDescs {
 
         String[] splitInput = input.split(",");
 
-        for (int i = 0; i < splitInput.length; i++) {
-            if (!splitInput[i].equals("f_qosm")) {
-                formatInput.append(splitInput[i]);
+        for (String aSplitInput : splitInput) {
+            if (!aSplitInput.equals("f_qosm")) {
+                formatInput.append(aSplitInput);
             }
 
         }

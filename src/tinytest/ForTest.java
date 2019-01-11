@@ -1,7 +1,7 @@
 package tinytest;
 
 import com.google.common.base.Splitter;
-import problems.leetcode.stack.TwoStackQueue;
+import comehere.problems.leetcode.stack.TwoStackQueue;
 
 import java.util.Iterator;
 
