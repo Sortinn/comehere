@@ -1,3 +1,3 @@
-[submodule "datastructure"]
-	path = datastructure
-	url = ./src/datastructure
+[submodule "practice.datastructure"]
+	path = practice.datastructure
+	url = ./src/practice.datastructure
