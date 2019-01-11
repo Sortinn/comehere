@@ -10,6 +10,7 @@ target/
 .classpath
 
 # idea ignore
+.idea/workspace.xml
 .idea
 *.ipr
 *.iml
