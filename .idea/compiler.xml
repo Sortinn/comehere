@@ -15,7 +15,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="Test" options="-J-Duser.country=US" />
+      <module name="Test" options="" />
     </option>
   </component>
 </project>

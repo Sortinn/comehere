@@ -1,1333 +1,220 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>sortinn.test</groupId>
-    <artifactId>common-test</artifactId>
-    <version>1.0.0</version>
+    <groupId>sortinn</groupId>
+    <artifactId>test</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>war</packaging>
 
-    <parent>
-        <groupId>qunar.common</groupId>
-        <artifactId>qunar-supom-generic</artifactId>
-        <version>2.0.1</version>
-    </parent>
+    <name>sortinn test</name>
+    <!-- FIXME change it to the project's website -->
+    <url>http://www.example.com</url>
 
     <properties>
         <org.springframework.version>4.3.9.RELEASE</org.springframework.version>
-        <tcdev.version>3.1.19</tcdev.version>
+        <slf4j.version>1.7.25</slf4j.version>
         <guava.version>18.0</guava.version>
         <fastjson.version>1.2.47</fastjson.version>
-        <qunar.common.version>9.2.17</qunar.common.version>
-        <qunar.qmonitor.version>2.0.1</qunar.qmonitor.version>
-        <druid.version>1.0.15</druid.version>
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
     </properties>
-
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>qunar.tc</groupId>
-                <artifactId>tcdev</artifactId>
-                <version>${tcdev.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.qunar.flight</groupId>
-                <artifactId>fuwu_chat_api</artifactId>
-                <version>1.0.8</version>
-            </dependency>
-            <dependency>
-                <groupId>com.qunar.flight</groupId>
-                <artifactId>tts_shopping_core.api</artifactId>
-                <version>1.2.1</version>
-            </dependency>
-            <dependency>
-                <groupId>com.qunar.search</groupId>
-                <artifactId>order-provider-api</artifactId>
-                <version>1.0.0</version>
-            </dependency>
-            <dependency>
-                <groupId>com.qunar.flight.pangolin</groupId>
-                <artifactId>transaction-common-api</artifactId>
-                <version>5.5.105</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.qunar.flight</groupId>
-                <artifactId>nts-inter-pikachu-api</artifactId>
-                <version>1.1.2</version>
-            </dependency>
-            <dependency>
-                <groupId>com.qunar.flight</groupId>
-                <artifactId>fuwu_gongdan_api</artifactId>
-                <version>1.1.24</version>
-            </dependency>
-            <dependency>
-                <groupId>com.google.code.gson</groupId>
-                <artifactId>gson</artifactId>
-                <version>2.8.2</version>
-            </dependency>
-            <dependency>
-                <groupId>com.qunar.marmot.aiplatform</groupId>
-                <artifactId>going_merry</artifactId>
-                <version>1.0.3</version>
-            </dependency>
-            <dependency>
-                <groupId>com.qunar.flight</groupId>
-                <artifactId>log-bridge-client</artifactId>
-                <version>1.0.0</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>log4j</groupId>
-                        <artifactId>log4j</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-            <dependency>
-                <groupId>com.qunar.mobile</groupId>
-                <artifactId>im_sdk</artifactId>
-                <version>2.1.5</version>
-            </dependency>
-            <dependency>
-                <groupId>com.qunar.callcenter</groupId>
-                <artifactId>im_reception</artifactId>
-                <version>1.0.2</version>
-            </dependency>
-            <dependency>
-                <groupId>mysql</groupId>
-                <artifactId>mysql-connector-java</artifactId>
-                <version>5.1.43</version>
-            </dependency>
-            <dependency>
-                <groupId>com.qunar.flight.tts</groupId>
-                <artifactId>ticketdb_api</artifactId>
-                <version>1.1.9</version>
-            </dependency>
-            <dependency>
-                <groupId>commons-digester</groupId>
-                <artifactId>commons-digester</artifactId>
-                <version>1.8</version>
-            </dependency>
-            <dependency>
-                <groupId>org.mybatis.generator</groupId>
-                <artifactId>mybatis-generator-core</artifactId>
-                <version>1.3.5</version>
-            </dependency>
-            <dependency>
-                <groupId>com.qunar.flight.fuwu</groupId>
-                <artifactId>fuwu_biz_boundary.api</artifactId>
-                <version>1.3.9</version>
-            </dependency>
-            <dependency>
-                <groupId>com.qunar.flightqm</groupId>
-                <artifactId>fuwu_ss.api</artifactId>
-                <version>1.0.6</version>
-            </dependency>
-            <dependency>
-                <groupId>com.qunar.flight</groupId>
-                <artifactId>fuwu_xcd_door_api</artifactId>
-                <version>1.0.5</version>
-            </dependency>
-            <dependency>
-                <groupId>com.qunar.fuwu.ttsi</groupId>
-                <artifactId>fuwu_ttsi_api</artifactId>
-                <version>1.3.5</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.qunar.flight.fuwu</groupId>
-                <artifactId>qosm_api</artifactId>
-                <version>1.0.59</version>
-            </dependency>
-            <!--vip-->
-            <dependency>
-                <groupId>com.qunar.fuwu</groupId>
-                <artifactId>quad_api</artifactId>
-                <version>1.0.5</version>
-            </dependency>
-            <!--航变changeId-->
-            <dependency>
-                <groupId>com.qunar.flightchangequery</groupId>
-                <artifactId>flightchangequery.api</artifactId>
-                <version>1.1.7</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.apache.poi</groupId>
-                <artifactId>poi</artifactId>
-                <version>3.11</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.fasterxml.jackson.core</groupId>
-                <artifactId>jackson-core</artifactId>
-                <version>2.5.2</version>
-            </dependency>
-            <dependency>
-                <groupId>com.fasterxml.jackson.core</groupId>
-                <artifactId>jackson-annotations</artifactId>
-                <version>2.7.4</version>
-            </dependency>
-            <dependency>
-                <groupId>com.qunar.flight</groupId>
-                <artifactId>flight_membership.api</artifactId>
-                <version>1.0.0</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.thoughtworks.xstream</groupId>
-                <artifactId>com.springsource.com.thoughtworks.xstream</artifactId>
-                <version>1.4.1</version>
-            </dependency>
-            <!--机票国内订单中心-->
-            <dependency>
-                <groupId>com.qunar.flight.fuwu</groupId>
-                <artifactId>fuwu-api</artifactId>
-                <version>2.0.20</version>
-            </dependency>
-            <dependency>
-                <groupId>com.qunar.flight.fuwu</groupId>
-                <artifactId>fuwu_uniform_api</artifactId>
-                <version>1.5.8</version>
-            </dependency>
-
-            <!--用户单、代理单-->
-            <dependency>
-                <groupId>com.qunar.flight.fuwu</groupId>
-                <artifactId>fuwu_order_dispatch.api</artifactId>
-                <version>1.1.9</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.qunar.fuwu</groupId>
-                <artifactId>qnotice-api</artifactId>
-                <version>1.0.6</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.qunar.flight</groupId>
-                <artifactId>qmonitor</artifactId>
-                <version>${qunar.qmonitor.version}</version>
-            </dependency>
-
-
-            <!--resole-->
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-web</artifactId>
-                <version>${org.springframework.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.aspectj</groupId>
-                <artifactId>aspectjweaver</artifactId>
-                <version>1.8.1</version>
-            </dependency>
-            <dependency>
-                <groupId>dom4j</groupId>
-                <artifactId>dom4j</artifactId>
-                <version>1.6.1</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.apache.velocity</groupId>
-                <artifactId>velocity</artifactId>
-                <version>1.7</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.velocity</groupId>
-                <artifactId>velocity-tools</artifactId>
-                <version>2.0</version>
-            </dependency>
-            <dependency>
-                <groupId>commons-io</groupId>
-                <artifactId>commons-io</artifactId>
-                <version>1.3.2</version>
-            </dependency>
-            <dependency>
-                <groupId>commons-fileupload</groupId>
-                <artifactId>commons-fileupload</artifactId>
-                <version>1.2.1</version>
-                <!-- makesure correct version here -->
-            </dependency>
-            <dependency>
-                <groupId>com.qunar.ucenter</groupId>
-                <artifactId>ucenter-client</artifactId>
-                <version>3.1.9</version>
-            </dependency>
-            <!--end-->
-
-            <!-- end -->
-            <!--db-->
-            <dependency>
-                <groupId>com.alibaba</groupId>
-                <artifactId>druid</artifactId>
-                <version>${druid.version}</version>
-            </dependency>
-            <!-- end -->
-
-
-            <!--fuwu auth-->
-            <dependency>
-                <groupId>com.qunar.flight</groupId>
-                <artifactId>fuwu_auth</artifactId>
-                <version>1.1.7</version>
-            </dependency>
-            <dependency>
-                <groupId>com.qunar.qm.fuwu</groupId>
-                <artifactId>log-api</artifactId>
-                <version>0.1.5</version>
-            </dependency>
-            <!--end-->
-
-            <dependency>
-                <groupId>com.qunar.sms.client</groupId>
-                <artifactId>sms-client-userorder</artifactId>
-                <version>1.2.0</version>
-            </dependency>
-            <dependency>
-                <groupId>com.qunar.sms.client</groupId>
-                <artifactId>sms-client-mobile</artifactId>
-                <version>1.1.0</version>
-            </dependency>
-            <dependency>
-                <groupId>com.qunar.fuwu</groupId>
-                <artifactId>sei-common</artifactId>
-                <exclusions>
-                    <exclusion>
-                        <artifactId>slf4j-log4j12</artifactId>
-                        <groupId>org.slf4j</groupId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>com.qunar.db</groupId>
-                        <artifactId>dbaccess</artifactId>
-                    </exclusion>
-
-                </exclusions>
-                <version>0.1.9</version>
-            </dependency>
-
-
-            <!-- end -->
-
-
-            <!--ivr-->
-            <dependency>
-                <groupId>com.qunar.fuwuxlp</groupId>
-                <artifactId>fuwu_xlp_api</artifactId>
-                <version>1.0.8</version>
-            </dependency>
-            <!--end-->
-
-            <dependency>
-                <groupId>com.qunar.flight.fuwu</groupId>
-                <artifactId>fuwu_bpm_data_adapter_api</artifactId>
-                <version>1.0.5</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.qunar.fuwu</groupId>
-                <artifactId>data_driver_api</artifactId>
-                <version>0.0.8</version>
-            </dependency>
-            <dependency>
-                <groupId>javax.activation</groupId>
-                <artifactId>activation</artifactId>
-                <version>1.1.1</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.commons</groupId>
-                <artifactId>commons-email</artifactId>
-                <version>1.4</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.qunar.qm.fuwu</groupId>
-                <artifactId>qgalaxy-api</artifactId>
-                <version>0.0.53</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.qunar.fuwu</groupId>
-                <artifactId>data_center_api</artifactId>
-                <version>0.0.57</version>
-            </dependency>
-
-            <dependency>
-                <artifactId>fuwu_service_core.api</artifactId>
-                <groupId>com.qunar.fuwu.coreserv</groupId>
-                <version>1.9.0</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.qunar.flight.tts</groupId>
-                <artifactId>infocenter_provider.api</artifactId>
-                <version>1.0.7</version>
-            </dependency>
-
-            <!--qunar.tc 没有 -->
-            <dependency>
-                <groupId>qunar.tc.order</groupId>
-                <artifactId>ordercenter-consumer-api</artifactId>
-                <version>2.6.42</version>
-            </dependency>
-            <dependency>
-                <groupId>com.qunar.flight</groupId>
-                <artifactId>travelco-rdf</artifactId>
-                <version>4.1.6</version>
-            </dependency>
-
-            <dependency>
-                <groupId>junit</groupId>
-                <artifactId>junit</artifactId>
-                <version>4.12</version>
-            </dependency>
-
-
-            <dependency>
-                <groupId>com.qunar.flight.tts</groupId>
-                <artifactId>tts_core.api</artifactId>
-                <version>3.4.20</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.javassist</groupId>
-                <artifactId>javassist</artifactId>
-                <version>3.18.0-GA</version>
-            </dependency>
-
-            <dependency>
-                <groupId>log4j</groupId>
-                <artifactId>log4j</artifactId>
-                <version>1.2.17</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.qunar.flight</groupId>
-                <artifactId>tts_search_bean.api</artifactId>
-                <version>1.4.10</version>
-            </dependency>
-
-
-            <dependency>
-                <groupId>com.qunar.flight.tts</groupId>
-                <artifactId>tts_public_data.api</artifactId>
-                <version>1.8.5</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.qunar.qmall</groupId>
-                <artifactId>qmall-api</artifactId>
-                <version>1.0.7</version>
-            </dependency>
-            <dependency>
-                <groupId>com.qunar.flight.tts</groupId>
-                <artifactId>tts_insurance.api</artifactId>
-                <version>1.2.4</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.qunar.flight.pangolin</groupId>
-                <artifactId>pangolin-search-api</artifactId>
-                <version>1.7.9</version>
-            </dependency>
-
-            <!--qunar vip-->
-            <dependency>
-                <groupId>com.qunar.fuwu</groupId>
-                <artifactId>fuwu-refundcore-api</artifactId>
-                <version>2.7.9</version>
-            </dependency>
-            <dependency>
-                <groupId>com.qunar.insurance</groupId>
-                <artifactId>insurance.plat.api</artifactId>
-                <version>2.5.97</version>
-            </dependency>
-
-
-            <dependency>
-                <groupId>com.qunar.flight.fuwu</groupId>
-                <artifactId>fuwu_order_base.api</artifactId>
-                <version>1.4.3</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.qunar.flight.fuwu</groupId>
-                <artifactId>orderpool.api</artifactId>
-                <version>1.0.11</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.qunar.flight.fuwu</groupId>
-                <artifactId>orderapp.api</artifactId>
-                <version>1.8.1</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.qunar.flight.fuwu</groupId>
-                <artifactId>fuwu-order-refund-api</artifactId>
-                <version>1.2.1</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.qunar.flight.fuwu</groupId>
-                <artifactId>fuwu-order-barter.api</artifactId>
-                <version>1.0.5</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.qunar.flight.iflagship</groupId>
-                <artifactId>iflagship_fuwu_api</artifactId>
-                <version>1.0.0</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.qunar.mobile</groupId>
-                <artifactId>mpub-utils</artifactId>
-                <version>1.0.8</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.taobao.util</groupId>
-                <artifactId>taobao-express</artifactId>
-                <version>3.0.18</version>
-            </dependency>
-            <dependency>
-                <groupId>com.qunar.fuwu</groupId>
-                <artifactId>tss-adapter</artifactId>
-                <version>1.0.9</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.qunar.fuwu.drools</groupId>
-                <artifactId>f_fuwu_drools-api</artifactId>
-                <version>1.2.5</version>
-            </dependency>
-            <dependency>
-                <groupId>com.qunar.flight</groupId>
-                <artifactId>fuwu_logistics_api</artifactId>
-                <version>1.0.3</version>
-            </dependency>
-            <dependency>
-                <groupId>com.qunar.flight.tts</groupId>
-                <artifactId>tts_invoice.api</artifactId>
-                <exclusions>
-                    <exclusion>
-                        <groupId>com.qunar.flight.tts</groupId>
-                        <artifactId>tts_pay.api</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>com.qunar.flight.tts</groupId>
-                        <artifactId>tts_policy.api</artifactId>
-                    </exclusion>
-                </exclusions>
-                <version>1.6.7</version>
-            </dependency>
-            <dependency>
-                <groupId>com.qunar.flight.tts</groupId>
-                <artifactId>tts-trade-api</artifactId>
-                <version>1.0.6</version>
-            </dependency>
-            <dependency>
-                <groupId>com.jayway.jsonpath</groupId>
-                <artifactId>json-path</artifactId>
-                <version>2.2.0</version>
-            </dependency>
-            <dependency>
-                <groupId>com.qunar.fuwu</groupId>
-                <artifactId>fuwu_invoicei_api</artifactId>
-                <version>1.0.12</version>
-            </dependency>
-            <dependency>
-                <groupId>com.qunar.mobile</groupId>
-                <artifactId>public-ark</artifactId>
-                <version>1.3.3</version>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
-
 
 
     <dependencies>
         <dependency>
-            <groupId>com.qunar.mobile</groupId>
-            <artifactId>public-ark</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.qunar.flight.tts</groupId>
-            <artifactId>tts-trade-api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.qunar.flight</groupId>
-            <artifactId>fuwu_logistics_api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.qunar.flight</groupId>
-            <artifactId>fuwu_chat_api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.qunar.flight</groupId>
-            <artifactId>tts_shopping_core.api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.qunar.search</groupId>
-            <artifactId>order-provider-api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.qunar.flight</groupId>
-            <artifactId>fuwu_gongdan_api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.qunar.flight</groupId>
-            <artifactId>log-bridge-client</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.google.code.gson</groupId>
-            <artifactId>gson</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.qunar.marmot.aiplatform</groupId>
-            <artifactId>going_merry</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.qunar.mobile</groupId>
-            <artifactId>im_sdk</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.qunar.callcenter</groupId>
-            <artifactId>im_reception</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.qunar.flight.pangolin</groupId>
-            <artifactId>transaction-common-api</artifactId>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.springframework</groupId>
-                    <artifactId>spring-asm</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>com.qunar.qmall</groupId>
-                    <artifactId>qmall_common_api</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>com.qunar.flight</groupId>
-            <artifactId>nts-inter-pikachu-api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.qunar.fuwu.drools</groupId>
-            <artifactId>f_fuwu_drools-api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.qunar.flight.tts</groupId>
-            <artifactId>ticketdb_api</artifactId>
-            <exclusions>
-                <exclusion>
-                    <groupId>com.qunar.pidshare</groupId>
-                    <artifactId>pidshare_dubbo.api</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>com.qunar.flight.fuwu</groupId>
-            <artifactId>fuwu_biz_boundary.api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.qunar.flightqm</groupId>
-            <artifactId>fuwu_ss.api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.qunar.flight</groupId>
-            <artifactId>fuwu_xcd_door_api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.taobao.util</groupId>
-            <artifactId>taobao-express</artifactId>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>27.0.1-jre</version>
         </dependency>
 
         <dependency>
-            <groupId>com.qunar.sms.client</groupId>
-            <artifactId>sms-client-userorder</artifactId>
-            <exclusions>
-                <exclusion>
-                    <artifactId>log4j</artifactId>
-                    <groupId>log4j</groupId>
-                </exclusion>
-                <exclusion>
-                    <artifactId>commons-logging</artifactId>
-                    <groupId>commons-logging</groupId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-
-
-        <dependency>
-            <groupId>com.qunar.fuwu.ttsi</groupId>
-            <artifactId>fuwu_ttsi_api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.qunar.flight.iflagship</groupId>
-            <artifactId>iflagship_fuwu_api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.qunar.flight.fuwu</groupId>
-            <artifactId>fuwu-order-refund-api</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.qunar.flight.fuwu</groupId>
-            <artifactId>fuwu-order-barter.api</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.qunar.db</groupId>
-            <artifactId>dbaccess</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.qunar.flight.fuwu</groupId>
-            <artifactId>qosm_api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.qunar.flightchangequery</groupId>
-            <artifactId>flightchangequery.api</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>qunar.common</groupId>
-            <artifactId>common-core</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>qunar.tc.order.complain</groupId>
-            <artifactId>ordercomplain-api</artifactId>
-            <version>1.3.2</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-core</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-annotations</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>qunar.tc.coreinfo</groupId>
-            <artifactId>core-info-api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.qunar.flight</groupId>
-            <artifactId>flight_membership.api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.thoughtworks.xstream</groupId>
-            <artifactId>com.springsource.com.thoughtworks.xstream</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.qunar.flight</groupId>
-            <artifactId>travelco-rdf</artifactId>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.slf4j</groupId>
-                    <artifactId>slf4j-log4j12</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>com.alibaba</groupId>
-                    <artifactId>fastjson</artifactId>
-                </exclusion>
-                <exclusion>
-                    <artifactId>commons-httpclient</artifactId>
-                    <groupId>commons-httpclient</groupId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-
-        <dependency>
-            <groupId>com.qunar.flight.fuwu</groupId>
-            <artifactId>fuwu-api</artifactId>
-        </dependency>
-        <!--用户单、代理单-->
-        <dependency>
-            <groupId>com.qunar.flight.fuwu</groupId>
-            <artifactId>fuwu_order_dispatch.api</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>qunar.common</groupId>
-            <artifactId>common-http</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.qunar.ucenter</groupId>
-            <artifactId>ucenter-client</artifactId>
-            <exclusions>
-                <exclusion>
-                    <artifactId>sms-client</artifactId>
-                    <groupId>com.qunar.sms.client</groupId>
-                </exclusion>
-                <exclusion>
-                    <artifactId>org.javassist</artifactId>
-                    <groupId>javassist</groupId>
-                </exclusion>
-                <exclusion>
-                    <artifactId>asm</artifactId>
-                    <groupId>org.ow2.asm</groupId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <!-- mybatis -->
-        <dependency>
-            <groupId>org.mybatis</groupId>
-            <artifactId>mybatis-spring</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.mybatis</groupId>
-            <artifactId>mybatis</artifactId>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>${org.springframework.version}</version>
         </dependency>
         <!-- spring -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
+            <version>${org.springframework.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
+            <version>${org.springframework.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>
+            <version>${org.springframework.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-web</artifactId>
+            <version>${org.springframework.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context-support</artifactId>
+            <version>${org.springframework.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
+            <version>${org.springframework.version}</version>
         </dependency>
+
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-instrument</artifactId>
+            <version>${org.springframework.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
+            <version>${org.springframework.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-oxm</artifactId>
+            <version>${org.springframework.version}</version>
         </dependency>
 
         <!-- slf4j start -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>jcl-over-slf4j</artifactId>
+            <version>${slf4j.version}</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>log4j-over-slf4j</artifactId>
+            <version>${slf4j.version}</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>jul-to-slf4j</artifactId>
+            <version>${slf4j.version}</version>
         </dependency>
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-core</artifactId>
+            <version>1.1.3</version>
         </dependency>
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
+            <version>1.1.3</version>
         </dependency>
         <!-- slf4j end -->
 
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>servlet-api</artifactId>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit-dep</artifactId>
-        </dependency>
 
-        <dependency>
-            <groupId>com.qunar.fuwu</groupId>
-            <artifactId>qnotice-api</artifactId>
-        </dependency>
-
-        <!-- qunar tc module start -->
-        <dependency>
-            <groupId>qunar.tc</groupId>
-            <artifactId>qmq-client</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>qunar.tc.qschedule</groupId>
-            <artifactId>qschedule-client</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.qunar.flight</groupId>
-            <artifactId>qmonitor</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>qunar.tc.qconfig</groupId>
-            <artifactId>qconfig-client</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>qunar.tc.qtracer</groupId>
-            <artifactId>qtracer-client</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.qunar.dubbo</groupId>
-            <artifactId>async</artifactId>
-        </dependency>
-        <!--end-->
-        <dependency>
-            <groupId>org.apache.velocity</groupId>
-            <artifactId>velocity</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.velocity</groupId>
-            <artifactId>velocity-tools</artifactId>
-            <exclusions>
-                <exclusion>
-                    <artifactId>commons-logging</artifactId>
-                    <groupId>commons-logging</groupId>
-                </exclusion>
-                <exclusion>
-                    <artifactId>oro</artifactId>
-                    <groupId>oro</groupId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-
-        <dependency>
-            <groupId>commons-io</groupId>
-            <artifactId>commons-io</artifactId>
-        </dependency>
+        <!--文件上传需要的jar包-->
         <dependency>
             <groupId>commons-fileupload</groupId>
             <artifactId>commons-fileupload</artifactId>
+            <version>1.3.3</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.6</version>
         </dependency>
 
-        <!--fuwu auth-->
-        <dependency>
-            <groupId>com.qunar.flight</groupId>
-            <artifactId>fuwu_auth</artifactId>
-            <exclusions>
-                <exclusion>
-                    <artifactId>slf4j-log4j12</artifactId>
-                    <groupId>org.slf4j</groupId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>com.qunar.qm.fuwu</groupId>
-            <artifactId>log-api</artifactId>
-        </dependency>
-        <!--end-->
-
-        <!--db-->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.qunar.db</groupId>
-            <artifactId>db-datasource</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid</artifactId>
-            <exclusions>
-                <exclusion>
-                    <artifactId>tools</artifactId>
-                    <groupId>com.alibaba</groupId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-
-        <!--end-->
-
-
-        <!--util-->
-        <dependency>
-            <groupId>com.qunar.fuwu</groupId>
-            <artifactId>tss-adapter</artifactId>
-            <!--<version>1.0.8</version>-->
-            <exclusions>
-                <exclusion>
-                    <artifactId>fuwu-api</artifactId>
-                    <groupId>com.qunar.qm.fuwu</groupId>
-                </exclusion>
-                <exclusion>
-                    <artifactId>fuwu-api</artifactId>
-                    <groupId>com.qunar.qm.fuwu</groupId>
-                </exclusion>
-                <exclusion>
-                    <artifactId>fuwu-api</artifactId>
-                    <groupId>com.qunar.qm.fuwu</groupId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>com.qunar.fuwu</groupId>
-            <artifactId>sei-common</artifactId>
-            <exclusions>
-                <exclusion>
-                    <artifactId>tts_policy.api</artifactId>
-                    <groupId>com.qunar.flight.tts</groupId>
-                </exclusion>
-                <exclusion>
-                    <groupId>com.qunar.db</groupId>
-                    <artifactId>dbaccess</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
 
         <dependency>
-            <groupId>com.qunar.sms.client</groupId>
-            <artifactId>sms-client-mobile</artifactId>
-            <exclusions>
-                <exclusion>
-                    <artifactId>log4j</artifactId>
-                    <groupId>log4j</groupId>
-                </exclusion>
-                <exclusion>
-                    <artifactId>commons-logging</artifactId>
-                    <groupId>commons-logging</groupId>
-                </exclusion>
-            </exclusions>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
+            <version>1.2.47</version>
         </dependency>
         <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20151123</version>
         </dependency>
         <dependency>
-            <groupId>qunar.tc.coreinfo</groupId>
-            <artifactId>core-info-client-decrypt</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>qunar.tc.coreinfo</groupId>
-            <artifactId>core-info-client-encrypt</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>commons-lang</groupId>
-            <artifactId>commons-lang</artifactId>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>2.7.4</version>
         </dependency>
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
+            <version>3.4</version>
         </dependency>
         <dependency>
-            <groupId>commons-collections</groupId>
-            <artifactId>commons-collections</artifactId>
-        </dependency>
-
-        <!--end-->
-
-        <!--ivr-->
-        <dependency>
-            <groupId>com.qunar.fuwuxlp</groupId>
-            <artifactId>fuwu_xlp_api</artifactId>
-        </dependency>
-        <!--end-->
-        <dependency>
-            <groupId>com.qunar.flight.fuwu</groupId>
-            <artifactId>fuwu_uniform_api</artifactId>
-            <exclusions>
-                <exclusion>
-                    <artifactId>slf4j-log4j12</artifactId>
-                    <groupId>org.slf4j</groupId>
-                </exclusion>
-                <exclusion>
-                    <artifactId>log4j</artifactId>
-                    <groupId>log4j</groupId>
-                </exclusion>
-                <exclusion>
-                    <artifactId>hamcrest-core</artifactId>
-                    <groupId>org.hamcrest</groupId>
-                </exclusion>
-                <exclusion>
-                    <artifactId>hamcrest-core</artifactId>
-                    <groupId>dbaccess</groupId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.springframework</groupId>
-                    <artifactId>spring-asm</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>com.qunar.flight.international</groupId>
-                    <artifactId>tgq.api</artifactId>
-                </exclusion>
-            </exclusions>
+            <groupId>com.google.collections</groupId>
+            <artifactId>google-collections</artifactId>
+            <version>1.0</version>
         </dependency>
         <dependency>
-            <groupId>com.qunar.flight.fuwu</groupId>
-            <artifactId>fuwu_bpm_data_adapter_api</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.qunar.fuwu</groupId>
-            <artifactId>data_driver_api</artifactId>
-        </dependency>
-
-        <!--vip-->
-        <dependency>
-            <groupId>com.qunar.fuwu</groupId>
-            <artifactId>fuwu-refundcore-api</artifactId>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.6</version>
         </dependency>
         <dependency>
-            <groupId>com.qunar.fuwu</groupId>
-            <artifactId>quad_api</artifactId>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>2.5</version>
+            <scope>provided</scope>
         </dependency>
-
-        <dependency>
-            <groupId>com.qunar.flight.tts</groupId>
-            <artifactId>tts_invoice.api</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.qunar.fuwu</groupId>
-            <artifactId>data_center_api</artifactId>
-        </dependency>
-
-        <dependency>
-            <artifactId>fuwu_service_core.api</artifactId>
-            <groupId>com.qunar.fuwu.coreserv</groupId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.qunar.flight.tts</groupId>
-            <artifactId>infocenter_provider.api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>qunar.tc.order</groupId>
-            <artifactId>ordercenter-consumer-api</artifactId>
-        </dependency>
-
-
-        <dependency>
-            <groupId>com.qunar.flight.tts</groupId>
-            <artifactId>tts_core.api</artifactId>
-            <exclusions>
-                <exclusion>
-                    <artifactId>commons-logging</artifactId>
-                    <groupId>commons-logging</groupId>
-                </exclusion>
-                <exclusion>
-                    <artifactId>ttssearch.common</artifactId>
-                    <groupId>com.qunar.flight</groupId>
-                </exclusion>
-                <exclusion>
-                    <artifactId>tts_policy.api</artifactId>
-                    <groupId>com.qunar.flight.tts</groupId>
-                </exclusion>
-                <exclusion>
-                    <artifactId>log4j</artifactId>
-                    <groupId>log4j</groupId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-
-        <dependency>
-            <groupId>com.qunar.flight.fuwu</groupId>
-            <artifactId>fuwu_order_base.api</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.qunar.flight.fuwu</groupId>
-            <artifactId>orderpool.api</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.qunar.flight.fuwu</groupId>
-            <artifactId>orderapp.api</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.qunar.mobile</groupId>
-            <artifactId>mpub-utils</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.mybatis.generator</groupId>
-            <artifactId>mybatis-generator-core</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.jayway.jsonpath</groupId>
-            <artifactId>json-path</artifactId>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.ow2.asm</groupId>
-                    <artifactId>asm</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>com.qunar.flight.fuwu</groupId>
-            <artifactId>fuwu_kie_api</artifactId>
-            <version>0.0.1</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>com.alibaba</groupId>
-                    <artifactId>fastjson</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>com.qunar.fuwu</groupId>
-            <artifactId>fuwu_invoicei_api</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.json</groupId>
-            <artifactId>json</artifactId>
-            <version>20180813</version>
-        </dependency>
-
     </dependencies>
 
 
-    <!-- profile -->
-    <profiles>
-        <profile>
-            <id>betamagic</id>
-            <properties>
-                <env>betamagic</env>
-            </properties>
-            <build>
-                <resources>
-                    <resource>
-                        <directory>src/main/resources-env/betamagic</directory>
-                    </resource>
-                    <resource>
-                        <directory>src/main/resources</directory>
-                    </resource>
-                </resources>
-            </build>
-        </profile>
-        <profile>
-            <id>betanoah</id>
-            <properties>
-                <env>betanoah</env>
-            </properties>
-            <build>
-                <resources>
-                    <resource>
-                        <directory>src/main/resources-env/betanoah</directory>
-                    </resource>
-                    <resource>
-                        <directory>src/main/resources</directory>
-                    </resource>
-                </resources>
-            </build>
-        </profile>
-        <profile>
-            <id>dev</id>
-            <properties>
-                <env>dev</env>
-            </properties>
-            <build>
-                <resources>
-                    <resource>
-                        <directory>src/main/resources-env/dev</directory>
-                    </resource>
-                    <resource>
-                        <directory>src/main/resources</directory>
-                    </resource>
-                </resources>
-            </build>
-        </profile>
-        <profile>
-            <id>prodprepare</id>
-            <properties>
-                <env>prodprepare</env>
-            </properties>
-            <build>
-                <resources>
-                    <resource>
-                        <directory>src/main/resources-env/prodprepare</directory>
-                    </resource>
-                    <resource>
-                        <directory>src/main/resources</directory>
-                    </resource>
-                </resources>
-            </build>
-        </profile>
-        <profile>
-            <id>prod</id>
-            <properties>
-                <env>prod</env>
-            </properties>
-            <build>
-                <resources>
-                    <resource>
-                        <directory>src/main/resources-env/prod</directory>
-                    </resource>
-                    <resource>
-                        <directory>src/main/resources</directory>
-                    </resource>
-                </resources>
-            </build>
-        </profile>
-    </profiles>
-
     <build>
-        <finalName>ROOT</finalName>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-dependency-plugin</artifactId>
-                <version>2.10</version>
+        <finalName>transfer-c</finalName>
+        <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+            <plugins>
+                <plugin>
+                    <artifactId>maven-clean-plugin</artifactId>
+                    <version>3.1.0</version>
+                </plugin>
+                <!-- see http://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_war_packaging -->
+                <plugin>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>3.0.2</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.8.0</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>2.22.1</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-war-plugin</artifactId>
+                    <version>3.2.2</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-install-plugin</artifactId>
+                    <version>2.5.2</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-deploy-plugin</artifactId>
+                    <version>2.8.2</version>
+                </plugin>
+                <plugin>
+                    <artifactId>tomcat7-maven-plugin</artifactId>
+                    <version>2.3-SNAPSHOT</version>
 
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.tomcat.maven</groupId>
-                <artifactId>tomcat7-maven-plugin</artifactId>
-                <version>2.2</version>
-                <configuration>
-                    <port>9081</port>
-                    <path>/</path>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.mybatis.generator</groupId>
-                <artifactId>mybatis-generator-maven-plugin</artifactId>
-                <version>1.3.2</version>
-            </plugin>
+                </plugin>
 
-        </plugins>
+            </plugins>
+        </pluginManagement>
     </build>
 </project>
