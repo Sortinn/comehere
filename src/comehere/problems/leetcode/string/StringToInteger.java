@@ -52,17 +52,19 @@ public class StringToInteger {
         String positiveStr;
         int indexNotZero = getIndexNotZero(str);
         if (indexNotZero == str.length()) return 0;
+        //这里取子串，将符号位都去掉了，所以得到的字符串是不带'-'号的
+        //也就可以把正数串和负数串放在一起进行转换
         positiveStr = str.substring(indexNotZero);
         if (positiveStr.length() > 10) {
-            return str.charAt(0) == '-' ? Integer.MIN_VALUE : Integer.MAX_VALUE;
+            return startC == '-' ? Integer.MIN_VALUE : Integer.MAX_VALUE;
         } else if (positiveStr.length() == 10) {
-            if (str.charAt(0) == '-') {
+            if (startC == '-') {
                 return str.compareTo(Integer.MIN_VALUE + "") >= 0 ? Integer.MIN_VALUE : -new Integer(positiveStr);
             } else {
                 return str.compareTo(Integer.MAX_VALUE + "") >= 0 ? Integer.MAX_VALUE : new Integer(positiveStr);
             }
         } else {
-            return str.charAt(0) == '-' ? -new Integer(positiveStr) : new Integer(positiveStr);
+            return startC == '-' ? -new Integer(positiveStr) : new Integer(positiveStr);
         }
 
     }
